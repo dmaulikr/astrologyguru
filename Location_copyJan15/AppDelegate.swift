@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  AstrologyGuru
+//  Location
 //
-//  Created by Akash Khanolkar on 1/21/15.
-//  Copyright (c) 2015 DbCom Consulting. All rights reserved.
+//  Created by PJ Vea on 10/18/14.
+//  Copyright (c) 2014 Vea Software. All rights reserved.
 //
 
 import UIKit

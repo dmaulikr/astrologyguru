@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="owG-i9-4gG">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Activity Predictions(Part 1)-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Location" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UEX-zt-5Qj"/>
+                        <viewControllerLayoutGuide type="bottom" id="CFo-Wy-XeL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AppIcon60x60" translatesAutoresizingMaskIntoConstraints="NO" id="jag-P8-C4q">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="z8f-nT-2f5">
+                                <rect key="frame" x="-15" y="266" width="615" height="162"/>
+                                <color key="backgroundColor" red="0.90472231329999997" green="0.90590521680000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <date key="date" timeIntervalSinceReferenceDate="440563764.307603">
+                                    <!--2014-12-18 02:49:24 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="presentDate:" destination="BYZ-38-t0r" eventType="valueChanged" id="vIj-nf-I46"/>
+                                </connections>
+                            </datePicker>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QVF-x4-O3d">
+                                <rect key="frame" x="0.0" y="105" width="600" height="162"/>
+                                <color key="backgroundColor" red="0.17119799787671164" green="0.65599322993108133" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </pickerView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What Type of Decision/Activity are you making?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ju9-rG-VTg">
+                                <rect key="frame" x="9" y="0.0" width="303" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="What Category is the decision you are making?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hir-Wx-ciQ">
+                                <rect key="frame" x="125" y="75" width="383" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z8f-nT-2f5" firstAttribute="top" secondItem="QVF-x4-O3d" secondAttribute="bottom" constant="10" id="Bmw-NQ-0iy"/>
+                            <constraint firstAttribute="centerX" secondItem="Hir-Wx-ciQ" secondAttribute="centerX" id="hLH-QZ-kiN"/>
+                            <constraint firstAttribute="centerX" secondItem="z8f-nT-2f5" secondAttribute="centerX" id="kCd-ZB-ld3"/>
+                            <constraint firstAttribute="centerX" secondItem="QVF-x4-O3d" secondAttribute="centerX" id="tVh-DL-NvV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Activity Predictions(Part 1)" id="3Gm-yR-QT4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="d3I-b1-WOq">
+                            <connections>
+                                <segue destination="f03-KN-gxx" kind="show" id="G6K-Hb-Pfx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myCategory" destination="QVF-x4-O3d" id="Vv6-o7-z9G"/>
+                        <outlet property="myDate" destination="z8f-nT-2f5" id="Wzr-rd-Fse"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1215" y="156"/>
+        </scene>
+        <!--Activity Predictions(Part 2)-->
+        <scene sceneID="Qhu-fl-zGo">
+            <objects>
+                <viewController id="f03-KN-gxx" customClass="ViewControllerSecond" customModule="Location" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VcY-3s-muM"/>
+                        <viewControllerLayoutGuide type="bottom" id="XcK-XV-s3x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IgM-QL-UTL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AppIcon60x60" translatesAutoresizingMaskIntoConstraints="NO" id="0wD-11-mFe">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Stw-6j-1WB">
+                                <rect key="frame" x="131" y="130" width="329" height="180"/>
+                                <color key="backgroundColor" red="0.16469031439172788" green="0.6730241028376418" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="What is you want us to help you predict?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDc-x4-4dj">
+                                <rect key="frame" x="140" y="81" width="329" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Sy-Za-Naq">
+                                <rect key="frame" x="-16" y="312" width="600" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="443076341.81210703">
+                                    <!--2015-01-16 04:45:41 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="DDc-x4-4dj" secondAttribute="centerX" id="G0Y-F4-DcT"/>
+                            <constraint firstAttribute="centerX" secondItem="6Sy-Za-Naq" secondAttribute="centerX" id="UFl-1X-m7S"/>
+                            <constraint firstItem="Stw-6j-1WB" firstAttribute="top" secondItem="DDc-x4-4dj" secondAttribute="bottom" constant="8" id="VPY-9G-cXk"/>
+                            <constraint firstAttribute="centerX" secondItem="DDc-x4-4dj" secondAttribute="centerX" id="bp0-B0-btV"/>
+                            <constraint firstAttribute="centerX" secondItem="Stw-6j-1WB" secondAttribute="centerX" id="cwH-Ij-FcJ"/>
+                            <constraint firstItem="Stw-6j-1WB" firstAttribute="top" secondItem="DDc-x4-4dj" secondAttribute="bottom" constant="8" id="gxB-ZA-EEB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Activity Predictions(Part 2)" id="n17-Me-9Yb">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="zrg-Ud-Kd4">
+                            <connections>
+                                <segue destination="60K-Ed-8sb" kind="show" id="9dz-fu-CK2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mySecondCategory" destination="Stw-6j-1WB" id="xTf-kF-s7B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mz5-nL-CeX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1951" y="159"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="4H4-ZM-r8u">
+            <objects>
+                <viewController id="60K-Ed-8sb" customClass="thirdViewController" customModule="Location" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GFQ-sJ-3rB"/>
+                        <viewControllerLayoutGuide type="bottom" id="49H-Q1-ZSt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gxW-Z5-A97">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kmm-GX-VeF">
+                                <rect key="frame" x="190" y="368" width="309" height="184"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jx-gt-aDI">
+                                <rect key="frame" x="252" y="142" width="207" height="30"/>
+                                <state key="normal" title="Click Me To Know Your Future">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="TriggerResponseAction:" destination="60K-Ed-8sb" eventType="touchUpInside" id="9b1-hq-Ifb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="9jx-gt-aDI" secondAttribute="centerX" id="R7S-yS-kOH"/>
+                            <constraint firstAttribute="centerX" secondItem="kmm-GX-VeF" secondAttribute="centerX" id="mL6-Sl-arS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="responseField" destination="kmm-GX-VeF" id="9kT-GY-hZ7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3j6-GK-TFf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2635" y="156"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wRY-di-f6y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="owG-i9-4gG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7lx-IL-XSg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GSf-9c-6ZR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCm-3a-oKv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219.375" y="158.45070422535207"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AppIcon60x60" width="640" height="960"/>
+    </resources>
+    <color key="tintColor" red="0.16731820723284074" green="0.16890137964732388" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+</document>

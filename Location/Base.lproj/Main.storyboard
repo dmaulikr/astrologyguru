@@ -1,25 +1,264 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="owG-i9-4gG">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AstrologyGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="UEX-zt-5Qj"/>
+                        <viewControllerLayoutGuide type="bottom" id="CFo-Wy-XeL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon60x60" translatesAutoresizingMaskIntoConstraints="NO" id="puA-QG-DLr">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="600" height="702"/>
+                                </variation>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QVF-x4-O3d">
+                                <rect key="frame" x="0.0" y="239" width="600" height="162"/>
+                                <color key="backgroundColor" red="0.17119799787671164" green="0.65599322993108133" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="400" width="600" height="162"/>
+                                </variation>
+                                <variation key="widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="239" width="800" height="162"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="239" width="800" height="162"/>
+                                </variation>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="What category is the decision you are making?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hir-Wx-ciQ">
+                                <rect key="frame" x="131" y="154" width="302" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Hir-Wx-ciQ" secondAttribute="height" multiplier="151:11" id="Up2-Oo-9Ga"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Up2-Oo-9Ga"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="Up2-Oo-9Ga"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="249" y="144" width="302" height="22"/>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="QVF-x4-O3d" secondAttribute="centerY" id="Ojr-jG-jha"/>
+                            <constraint firstItem="QVF-x4-O3d" firstAttribute="top" secondItem="Hir-Wx-ciQ" secondAttribute="bottom" constant="50" id="Yfp-ra-JEe"/>
+                            <constraint firstAttribute="centerX" secondItem="Hir-Wx-ciQ" secondAttribute="centerX" id="hLH-QZ-kiN"/>
+                            <constraint firstAttribute="centerY" secondItem="Hir-Wx-ciQ" secondAttribute="centerY" id="qBs-fe-3ba"/>
+                            <constraint firstAttribute="centerX" secondItem="QVF-x4-O3d" secondAttribute="centerX" id="tVh-DL-NvV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="puA-QG-DLr"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="qBs-fe-3ba"/>
+                                <exclude reference="Ojr-jG-jha"/>
+                                <exclude reference="Yfp-ra-JEe"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="puA-QG-DLr"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="qBs-fe-3ba"/>
+                                <include reference="Ojr-jG-jha"/>
+                                <include reference="Yfp-ra-JEe"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="3Gm-yR-QT4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="d3I-b1-WOq">
+                            <connections>
+                                <segue destination="f03-KN-gxx" kind="show" id="G6K-Hb-Pfx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myCategory" destination="QVF-x4-O3d" id="Vv6-o7-z9G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1215" y="156"/>
+        </scene>
+        <!--View Controller Second-->
+        <scene sceneID="Qhu-fl-zGo">
+            <objects>
+                <viewController id="f03-KN-gxx" customClass="ViewControllerSecond" customModule="AstrologyGuru" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VcY-3s-muM"/>
+                        <viewControllerLayoutGuide type="bottom" id="XcK-XV-s3x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IgM-QL-UTL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AppIcon60x60" translatesAutoresizingMaskIntoConstraints="NO" id="0wD-11-mFe">
+                                <rect key="frame" x="0.0" y="64" width="600" height="736"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Stw-6j-1WB">
+                                <rect key="frame" x="131" y="124" width="321" height="162"/>
+                                <color key="backgroundColor" red="0.16469031439172788" green="0.6730241028376418" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What do you want us to predict for you?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDc-x4-4dj">
+                                <rect key="frame" x="99" y="82" width="403" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Sy-Za-Naq">
+                                <rect key="frame" x="-16" y="362" width="600" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="443076341.81210703">
+                                    <!--2015-01-16 04:45:41 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="presentDate:" destination="f03-KN-gxx" eventType="valueChanged" id="ctd-3x-Qgp"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What time will you likely make this decision?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTD-qX-eQ4">
+                                <rect key="frame" x="157" y="330" width="403" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="gTD-qX-eQ4" secondAttribute="centerX" id="16w-Vb-nOa"/>
+                            <constraint firstItem="XcK-XV-s3x" firstAttribute="top" secondItem="6Sy-Za-Naq" secondAttribute="bottom" id="1Wh-9g-yzD"/>
+                            <constraint firstItem="6Sy-Za-Naq" firstAttribute="top" secondItem="gTD-qX-eQ4" secondAttribute="bottom" id="1iS-le-xNs"/>
+                            <constraint firstItem="XcK-XV-s3x" firstAttribute="top" secondItem="6Sy-Za-Naq" secondAttribute="bottom" constant="10" id="Fst-Bq-tXb"/>
+                            <constraint firstAttribute="centerX" secondItem="DDc-x4-4dj" secondAttribute="centerX" id="G0Y-F4-DcT"/>
+                            <constraint firstAttribute="centerX" secondItem="6Sy-Za-Naq" secondAttribute="centerX" id="UFl-1X-m7S"/>
+                            <constraint firstItem="Stw-6j-1WB" firstAttribute="top" secondItem="DDc-x4-4dj" secondAttribute="bottom" constant="8" id="VPY-9G-cXk"/>
+                            <constraint firstItem="6Sy-Za-Naq" firstAttribute="width" secondItem="Stw-6j-1WB" secondAttribute="height" multiplier="10:3" id="bmh-NS-Whh"/>
+                            <constraint firstAttribute="centerX" secondItem="DDc-x4-4dj" secondAttribute="centerX" id="bp0-B0-btV"/>
+                            <constraint firstAttribute="centerX" secondItem="Stw-6j-1WB" secondAttribute="centerX" id="cwH-Ij-FcJ"/>
+                            <constraint firstItem="Stw-6j-1WB" firstAttribute="top" secondItem="DDc-x4-4dj" secondAttribute="bottom" constant="8" id="gxB-ZA-EEB"/>
+                            <constraint firstItem="Stw-6j-1WB" firstAttribute="width" secondItem="gTD-qX-eQ4" secondAttribute="height" multiplier="329:22" id="npm-th-ADR"/>
+                            <constraint firstItem="DDc-x4-4dj" firstAttribute="top" secondItem="VcY-3s-muM" secondAttribute="bottom" constant="5" id="xSf-yH-fpC"/>
+                            <constraint firstItem="gTD-qX-eQ4" firstAttribute="top" secondItem="Stw-6j-1WB" secondAttribute="bottom" constant="10" id="yCK-Wr-5rM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="npm-th-ADR"/>
+                                <exclude reference="Fst-Bq-tXb"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="n17-Me-9Yb">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="zrg-Ud-Kd4">
+                            <connections>
+                                <segue destination="QAV-48-1Bx" kind="show" id="fLf-pA-erF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myDate" destination="6Sy-Za-Naq" id="eml-RC-sxq"/>
+                        <outlet property="mySecondCategory" destination="Stw-6j-1WB" id="xTf-kF-s7B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mz5-nL-CeX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1951" y="172"/>
+        </scene>
+        <!--Third Again View Controller-->
+        <scene sceneID="Llc-Gg-9re">
+            <objects>
+                <viewController id="QAV-48-1Bx" customClass="thirdAgainViewController" customModule="AstrologyGuru" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5RB-5h-ntQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="r4E-Ii-rEI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wbJ-ms-2Nb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="AppIcon60x60" translatesAutoresizingMaskIntoConstraints="NO" id="Q4g-JX-i6O">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text=" Click Green Text For Result" translatesAutoresizingMaskIntoConstraints="NO" id="Vib-dO-TCl">
+                                <rect key="frame" x="167" y="266" width="265" height="136"/>
+                                <color key="backgroundColor" red="0.1535615971" green="0.635062723" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Dt-A2-oZs">
+                                <rect key="frame" x="105" y="175" width="390" height="83"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Click me For Your Future Prediction">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addResponse:" destination="QAV-48-1Bx" eventType="touchUpInside" id="EO3-oy-tiR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="r4E-Ii-rEI" firstAttribute="top" secondItem="Vib-dO-TCl" secondAttribute="bottom" constant="20" id="Fxy-Rc-uUL"/>
+                            <constraint firstAttribute="centerX" secondItem="Vib-dO-TCl" secondAttribute="centerX" id="GMa-TC-Qna"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vib-dO-TCl" secondAttribute="trailing" id="RB4-29-haS"/>
+                            <constraint firstItem="Vib-dO-TCl" firstAttribute="top" secondItem="1Dt-A2-oZs" secondAttribute="bottom" constant="100" id="dJ1-fP-dTY"/>
+                            <constraint firstItem="Q4g-JX-i6O" firstAttribute="top" secondItem="5RB-5h-ntQ" secondAttribute="bottom" id="m6e-0b-6Ry"/>
+                            <constraint firstItem="Vib-dO-TCl" firstAttribute="leading" secondItem="wbJ-ms-2Nb" secondAttribute="leadingMargin" id="nR9-qb-aZl"/>
+                            <constraint firstAttribute="centerX" secondItem="1Dt-A2-oZs" secondAttribute="centerX" id="p4r-FF-iHm"/>
+                            <constraint firstItem="r4E-Ii-rEI" firstAttribute="top" secondItem="Q4g-JX-i6O" secondAttribute="bottom" id="zGi-ps-RCi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textResult" destination="Vib-dO-TCl" id="Jco-Y4-NtM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lx0-Ul-O6C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2626" y="159"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wRY-di-f6y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="owG-i9-4gG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7lx-IL-XSg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GSf-9c-6ZR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCm-3a-oKv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219.375" y="158.45070422535207"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AppIcon60x60" width="640" height="960"/>
+    </resources>
+    <color key="tintColor" red="0.16731820723284074" green="0.16890137964732388" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
