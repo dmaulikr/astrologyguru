@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>98E8D276-C070-4B56-98D4-679C7271CC46</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AstrologyGuru</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4A2A7F2530C935B3BFC6922B8C236E76105BC1CA</key>
+		<string>https://github.com/akhanolk/astrologyguru.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AstrologyGuru.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4A2A7F2530C935B3BFC6922B8C236E76105BC1CA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/akhanolk/astrologyguru.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4A2A7F2530C935B3BFC6922B8C236E76105BC1CA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4A2A7F2530C935B3BFC6922B8C236E76105BC1CA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>astrologyguru</string>
+		</dict>
+	</array>
+</dict>
+</plist>
