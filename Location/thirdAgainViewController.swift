@@ -25,12 +25,9 @@ class thirdAgainViewController: UIViewController {
     
     @IBAction func addResponse(sender: AnyObject) {
         
-        var defaults = NSUserDefaults(suiteName: "group.com.astrologysharing")
-        println("Hello")
-        println(defaults!.stringForKey("sharing"))
-        textResult.text = defaults!.stringForKey("sharing")
+    
         
-//        textResult.text = getResponse;
+        textResult.text = getResponse;
     }
 
     /*

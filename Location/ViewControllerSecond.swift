@@ -106,13 +106,26 @@ class ViewControllerSecond: UIViewController, UIPickerViewDataSource,UIPickerVie
         }
         
         
-        
+     
         
         let rd = AstrologyClass(sunRiseTime:tSun.0,sunSetTime:tSun.1,selectedTime:theSelectedMinutes, dayOfWeek:dayOfWeek);
         
+//        var timer = NSTimer.scheduledTimerWithTimeInterval(0.4, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
+//        
+//        func update()
+//        {
+//            
+//            println("hh")
+//        }
         
         var theReadings = rd.getReading(dayOfWeek);
         astrologyTimeGiven = theReadings;
+        println("made it here")
+        
+
+        
+        var defaults = NSUserDefaults(suiteName: "group.com.astrologysharing")
+        defaults?.setObject(theReadings, forKey: "sharing")
         
         //xml parser
         

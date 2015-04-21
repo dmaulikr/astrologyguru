@@ -13,6 +13,7 @@ import Foundation
 class InterfaceController: WKInterfaceController {
     @IBOutlet weak var fd: WKInterfaceImage!
 
+    @IBOutlet weak var testLabel: WKInterfaceLabel!
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
      
@@ -22,12 +23,20 @@ class InterfaceController: WKInterfaceController {
       
         newView.frame = CGRectMake(0.0,0.0,100.0,100.0);
         
-//        var image = UIImage(contentsOfFile: "smiley.jpg")
-//        fd.setImageNamed("smiley.jpg")
+
+        
+  
         
         var defaults = NSUserDefaults(suiteName: "group.com.astrologysharing")
-        defaults?.setObject("Hello", forKey: "sharing")
+        println(defaults!.stringForKey("sharing"))
+        testLabel.setText(defaults!.stringForKey("sharing"))
         
+                var image = UIImage(contentsOfFile: "smiley.jpg")
+//                fd.setImageNamed("smiley.jpg")
+        
+        fd.setImageNamed("happy1.png")
+        
+        fd.startAnimatingWithImagesInRange(NSRange(location: 0, length: 14), duration:2, repeatCount: 5)
         
         // Configure interface objects here.
     }
