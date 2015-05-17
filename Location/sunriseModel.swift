@@ -42,7 +42,9 @@ class testSunrise
         var M = (0.9856 * t) - 3.289;
         
         //calculate the Sun's true longitude
-        var L = M + (1.916 * sin(M * D2R)) + (0.020 * sin(2 * M * D2R)) + 282.634;
+        var num1 = 282.634
+        var num2 = (0.020 * sin(2 * M * D2R))
+        var L = M + (1.916 * sin(M * D2R)) + num2 + num1;
         if (L > 360) {
             L = L - 360;
         } else if (L < 0) {

@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>98E8D276-C070-4B56-98D4-679C7271CC46</string>
 	<key>IDESourceControlProjectName</key>
-	<string>AstrologyGuru</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>4A2A7F2530C935B3BFC6922B8C236E76105BC1CA</key>
 		<string>https://github.com/akhanolk/astrologyguru.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>AstrologyGuru.xcodeproj</string>
+	<string>AstrologyGuru.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>4A2A7F2530C935B3BFC6922B8C236E76105BC1CA</key>

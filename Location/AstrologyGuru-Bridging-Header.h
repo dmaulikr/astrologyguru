@@ -3,4 +3,5 @@
 //
 
 #import "FWAnalogClock.h"
+#import <Parse/Parse.h>
 

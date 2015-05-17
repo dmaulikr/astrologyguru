@@ -223,7 +223,7 @@ class ViewControllerSecond: UIViewController, UIPickerViewDataSource,UIPickerVie
       
         
         
-        var thirdVC: thirdAgainViewController = segue.destinationViewController as thirdAgainViewController;
+        var thirdVC: thirdAgainViewController = segue.destinationViewController as! thirdAgainViewController;
         thirdVC.getResponse = myPredictionResult;
         
         
@@ -268,7 +268,7 @@ class ViewControllerSecond: UIViewController, UIPickerViewDataSource,UIPickerVie
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         
         
-        var currentLocation : CLLocation = locations[0] as CLLocation
+        var currentLocation : CLLocation = locations[0] as! CLLocation
         
         theLatitude = currentLocation.coordinate.latitude;
         theLongitude = currentLocation.coordinate.longitude;
@@ -285,7 +285,7 @@ class ViewControllerSecond: UIViewController, UIPickerViewDataSource,UIPickerVie
                 }
                 
                 if placemarks.count > 0 {
-                    let pm = placemarks[0] as CLPlacemark
+                    let pm = placemarks[0] as! CLPlacemark
                     self.displayLocationInfo(pm)
                 }   else {
                     println("Error with the data.")
